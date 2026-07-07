@@ -11,6 +11,6 @@ set(CMAKE_AUTOUIC ON)
 
 find_package(Qt6 REQUIRED COMPONENTS Core Gui Widgets)
 
-add_executable(MyProject main.cpp widget.cpp)
+add_executable(MyProject main.cpp src/window/mainwindow.cpp)
 
 target_link_libraries(MyProject PRIVATE Qt6::Core Qt6::Gui Qt6::Widgets)
