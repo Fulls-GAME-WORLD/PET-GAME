@@ -3,8 +3,8 @@
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent) {
     
-    this->setWindowTitle("Мое первое окно на Qt");
-    this->resize(800, 600);
+    this->setWindowTitle("PET GAME");
+    this->resize(1920, 1080);
 }
 
 MainWindow::~MainWindow() {

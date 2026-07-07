@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.16)
 
-project(MyProject VERSION 1.0 LANGUAGES CXX)
+project(PET-GAME VERSION 1.0 LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -11,6 +11,6 @@ set(CMAKE_AUTOUIC ON)
 
 find_package(Qt6 REQUIRED COMPONENTS Core Gui Widgets)
 
-add_executable(MyProject main.cpp src/window/mainwindow.cpp)
+add_executable(PET-GAME main.cpp src/window/mainwindow.cpp src/window/include/window.h)
 
-target_link_libraries(MyProject PRIVATE Qt6::Core Qt6::Gui Qt6::Widgets)
+target_link_libraries(PET-GAME PRIVATE Qt6::Core Qt6::Gui Qt6::Widgets)
